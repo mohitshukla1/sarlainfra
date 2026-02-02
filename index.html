@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sarla infra | Premium Real Estate Lucknow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <style>
+        :root {
+            --primary: #0a2540; /* Darker, modern blue */
+            --accent: #62aa69;  /* Gold accent for luxury feel */
+            --whatsapp: #25d366;
+            --text: #4a4a4a;
+            --light: #f9fafb;
+        }
+
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; margin: 0; color: var(--text); line-height: 1.7; background: #fff; }
+
+        /* FIXED MOBILE-FRIENDLY MENU */
+        header {
+            position: fixed; top: 0; width: 100%; background: #fff;
+            padding: 15px 5%; 
+            display: flex; justify-content: space-between;
+            align-items: center; z-index: 2000; box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .logo { font-weight: 700; font-size: 1.4rem; color: var(--primary); letter-spacing: -1px; }
+        .nav-links { display: flex; gap: 25px; }
+        .nav-links a { text-decoration: none; color: var(--primary); font-weight: 500; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 160px 5% 80px; background: linear-gradient(45deg, #0a2540f2, #0a254099), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center; color: white; text-align: center;
+        }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 20px; }
+        .hero p { max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; opacity: 0.9; }
+
+        /* GRID SECTIONS */
+      
+        section { padding: 60px 5%; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; color: var(--primary); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { padding: 30px; background: var(--light); border-radius: 12px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card i { font-size: 2rem; color: var(--accent); margin-bottom: 15px; }
+
+        /* FORM */
+        .contact-box { max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .contact-info { background: var(--primary); color: white; padding: 40px; }
+        form { padding: 40px; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .btn { background: var(--accent); color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: 600; width: 100%; }
+
+        /* FLOATING WHATSAPP */
+        .whatsapp-btn {
+            position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp);
+            width: 60px; height: 60px; border-radius: 50%; display: flex;
+            align-items: center; justify-content: center; color: white;
+            font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* In a real project, use a JS toggle for this */
+            .contact-box { grid-template-columns: 1fr; }
+            header { padding: 15px 20px; }
+        }
+        .logo-img {
+            height: 75px;       /* Adjust this height to fit your logo design */
+            width: auto;        /* This maintains the aspect ratio */
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05); /* Subtle zoom when hovering */
+        }
+
+        /* On mobile, we might want the logo a bit smaller */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 40px; 
+            }
+        }
+        h1, h2 {
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="assets/images/logo.png" alt="sarla Infra developers" class="logo-img">
+            </a>
+        </div>
+        <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about-details">About</a>
+        <a href="#why-invest">Why Invest</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <section class="hero" id="home">
+        
+        <h1>Sarla Infa Developers</h1>
+        <h2>Building a Secure Future in Lucknow</h2>
+        <p>Expertly curated real estate opportunities in high-growth zones. Transparent, reliable, and designed for your success.</p>
+        <a href="#contact" class="btn" style="width: auto; display: inline-block;">Get a Free Consultation</a>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>Why Invest With Us?</h2>
+            <p>We redefine luxury by bringing premium quality land at accessible prices.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>High Appreciation</h3>
+                <p>Strategically located land ensures your investment grows faster than the market average.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Zero Risk</h3>
+                <p>We manage every legal detail, ensuring a transparent and safe transfer of ownership.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Prime Location</h3>
+                <p>Proximity to Metro, International Airports, and major IT hubs in Lucknow.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about-details" style="padding: 100px 5%;">
+    <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items: center;">
+        <div>
+            <h2 style="color: var(--primary); font-size: 2.5rem;">The Sarla Philosophy</h2>
+            <p>Sarla Infra Developers is a dynamic force in the Lucknow real estate landscape. Founded by technocrat promoters with years of market observation, we specialize in identifying vibrant locales that blend the heritage of Lucknow with modern infrastructure.</p>
+            
+            <div style="margin-top: 30px;">
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--accent); margin-bottom: 5px;"><i class="fas fa-bullseye"></i> Our Mission</h4>
+                    <p>To deliver meticulously managed land assets that serve as a foundation for perennial celebration and financial security for our clients.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent); margin-bottom: 5px;"><i class="fas fa-eye"></i> Our Vision</h4>
+                    <p>To build a nation free from housing insecurities by redefining luxury—bringing spacious, premium-quality land to the market at accessible price points.</p>
+                </div>
+            </div>
+        </div>
+        <div style="background: var(--light); padding: 40px; border-radius: 20px; border-left: 5px solid var(--accent);">
+            <h3 style="color: var(--primary);">Message from the Founder</h3>
+            <p style="font-style: italic;">"Real Estate is not just about buying and selling; it is about providing exceptional service, expert guidance, and unwavering integrity. We prioritize your needs to ensure every interaction reflects the highest level of professionalism."</p>
+        </div>
+    </div>
+    </section>
+    <section id="projects" style="padding: 100px 5%;">
+    <div class="section-title">
+        <h2>Our Projects in Lucknow</h2>
+        <p>Explore our premium townships and residential plots</p>
+    </div>
+    <div class="grid">
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: 15px;">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Project" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 20px;">
+                <span style="background: var(--accent); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">PREMIUM PLOTS</span>
+                <h3 style="margin: 15px 0 10px;">Sarla City Phase I</h3>
+                <p>Located near the upcoming IT hub with modern amenities and 24/7 security.</p>
+                <a href="#contact" style="color: var(--accent); font-weight: 700; text-decoration: none;">View Details →</a>
+            </div>
+        </div>
+        
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: 15px;">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Project" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 20px;">
+                <span style="background: #28a745; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">LAUNCHING SOON</span>
+                <h3 style="margin: 15px 0 10px;">Sarla Enclave</h3>
+                <p>Strategic location on the outskirts, designed for those seeking peace and high appreciation.</p>
+                <a href="#contact" style="color: var(--accent); font-weight: 700; text-decoration: none;">Inquire Now →</a>
+            </div>
+        </div>
+
+        <div class="card" style="padding: 0; overflow: hidden; border-radius: 15px;">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Project" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 20px;">
+                <span style="background: var(--primary); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">RESIDENTIAL</span>
+                <h3 style="margin: 15px 0 10px;">Sarla Heritage Greens</h3>
+                <p>A blend of magnificent culture and modern living with wide roads and solar lighting.</p>
+                <a href="#contact" style="color: var(--accent); font-weight: 700; text-decoration: none;">Join Waitlist →</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="why-invest" style="background: #f0f4f8; padding: 80px 5%;">
+        <div class="section-title">
+            <h2>Why Invest in Lucknow Property?</h2>
+            <p>Real estate remains the safest vertical for guaranteed appreciation.</p>
+        </div>
+        <div class="grid">
+            <div class="card" style="text-align: center;">
+                <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <h3>Safe & Secure</h3>
+                <p>Unlike volatile markets, land is a physical asset that offers absolute control and security in uncertain times.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <i class="fas fa-chart-line" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <h3>High Returns</h3>
+                <p>With Lucknow's rapid expansion toward the outskirts, strategic land investment promises excellent ROI as city limits grow.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <i class="fas fa-city" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <h3>Lucknow's Growth</h3>
+                <p>Proximity to the Metro, International Airport, and world-class Medical Facilities makes this the "Golden Corridor" for investors.</p>
+            </div>
+        </div>
+    </section>
+    <section id="amenities" style="background: var(--light);">
+        <div class="section-title">
+            <h2>Township Amenities</h2>
+        </div>
+        <div class="grid">
+            <div class="card"><h3><i class="fas fa-swimming-pool"></i> Lifestyle</h3><p>Clubhouse, Swimming Pool, Gaming Station, and Mini Theatre.</p></div>
+            <div class="card"><h3><i class="fas fa-leaf"></i> Nature</h3><p>Senior Citizen Park, Maze Garden, and wide open green spaces.</p></div>
+            <div class="card"><h3><i class="fas fa-lock"></i> Security</h3><p>24/7 Guards, CCTV, and Boom Barrier Entry systems.</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                <p><i class="fas fa-envelope"></i> info@sarlainfra.net</p>
+                <p><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh, India</p>
+            </div>
+            <form action="https://formspree.io/f/your_id" method="POST">
+                <h3>Quick Inquiry</h3>
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="I am interested in..." rows="4" required></textarea>
+                <button type="submit" class="btn">Send to Gmail</button>
+            </form>
+        </div>
+    </section>
+
+    <a href="https://wa.me/8960931924" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer style="text-align: center; padding: 40px; background: var(--primary); color: white;">
+        <p>&copy; 2026 sarla Infra Developers. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
